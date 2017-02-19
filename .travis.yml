@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "7.5.0"
+before_install:
+- openssl aes-256-cbc -K $encrypted_871c47b8111a_key -iv $encrypted_871c47b8111a_iv
+  -in secret.json.enc -out secret.json -d
+deploy:
+  provider: gae
+  keyfile: secret.json
+  project: phrasal-hold-136823

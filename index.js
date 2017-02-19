@@ -14,7 +14,6 @@ app.use(compression());
 // the `req.path` within the directory
 // that you pass it. In this case "GET /js/app.js"
 // will look for "./public/js/app.js".
-
 app.use(express.static(path.join(__dirname, 'public')));
 
 // if you wanted to "prefix" you may use

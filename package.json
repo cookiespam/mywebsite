@@ -3,6 +3,10 @@
   "version": "0.0.3",
   "description": "React Webpack Babel Starter Kit",
   "main": "''",
+  "engines": {
+    "node": "7.5.0",
+	"npm": "4.3.0"
+  },
   "scripts": {
     "build": "webpack --config webpack.production.config.js --progress --profile --colors",
 	"dev": "webpack-dev-server --progress --profile --colors",
