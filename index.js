@@ -30,4 +30,6 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 // this will allow "GET /style.css" instead of "GET /css/style.css":
 app.use(express.static(path.join(__dirname, 'public', 'css')));
 
-app.listen(8080);
+const server = app.listen(process.env.PORT || 5000, () => {
+    console.log('Express server listening on port %d in %s mode', server.address().port, app.settings.env);
+});
