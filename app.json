@@ -1,0 +1,7 @@
+{
+    "name": "My website",
+    "description": "",
+    "image": "heroku/python",
+    "repository": "https://github.com/heroku/python-getting-started",
+    "keywords": ["python", "django"]
+}
